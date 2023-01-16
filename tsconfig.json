@@ -1,0 +1,21 @@
+{
+  "extends": "ts-node/node16/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["es5", "es6", "dom"],
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "useUnknownInCatchVariables": false,
+    "skipLibCheck": true,
+    // use strictPropertyInitialization to not initialize all your variables
+    "strictPropertyInitialization": false,
+    "baseUrl": "./src"
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts", "src/__test__/*"]
+}
