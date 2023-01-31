@@ -4,8 +4,8 @@
   "description": "",
   "main": "./dist/app.js",
   "engines": {
-    "node": ">=16.16.0",
-    "npm": ">=8.11.0"
+    "node": "16.16.0",
+    "npm": "8.11.0"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
