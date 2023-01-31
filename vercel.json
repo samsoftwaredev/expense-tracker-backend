@@ -1,4 +1,5 @@
 {
+  "rewrites": [{ "source": "/dist/(.*)", "destination": "/dist" }],
   "builds": [
     {
       "src": "./dist/index.js",
@@ -8,7 +9,7 @@
   "routes": [
     {
       "src": "./dist/(.*)",
-      "dest": "index.js"
+      "dest": "/"
     }
   ]
 }
