@@ -1,5 +1,5 @@
-import { database } from "../config";
 import { ref, get, push, set, remove, update } from "firebase/database";
+import { database } from "../config";
 import {
   expenseDBProps,
   expenseOptionalProps,

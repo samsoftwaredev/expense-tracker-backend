@@ -1,4 +1,5 @@
 var cors = require("cors");
+// import helmet from "helmet";
 import express, { Request, Response } from "express";
 import { headerMiddleware, requestListenerMiddleware } from "../middlewares";
 import { ProjectController, ExpenseController } from "../controllers";
@@ -33,6 +34,7 @@ class Server {
   preMiddleware = () => {
     this.app.use(express.json());
     this.app.use(cors());
+    // this.app.use(helmet());
     this.app.use(headerMiddleware);
     this.app.use(requestListenerMiddleware);
   };

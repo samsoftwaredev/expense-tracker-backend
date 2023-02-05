@@ -17,6 +17,7 @@
     "express-oauth2-jwt-bearer": "^1.1.0",
     "express-openid-connect": "^2.8.0",
     "firebase": "^9.15.0",
+    "helmet": "^6.0.1",
     "jwks-rsa": "^2.1.4",
     "pg": "^8.7.3",
     "typeorm": "^0.3.7",
