@@ -1,9 +1,8 @@
-import { Server } from "../config";
+const app = require("../app");
 import { ProjectController } from "../controllers";
 
 const projectController = new ProjectController();
 
-const server = new Server();
-server.getApp().use("/api/project", projectController.router);
+app.use("/api/project", projectController.router);
 
-module.exports = server.getApp();
+module.exports = app;
