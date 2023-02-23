@@ -24,5 +24,4 @@ class Database {
   ref = () => this.dbRef;
 }
 
-const database: Database = new Database();
-export { database };
+export const database: Database = new Database();

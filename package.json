@@ -39,7 +39,7 @@
     "tsc": "./node_modules/typescript/bin/tsc",
     "build": "tsc",
     "start": "node ./dist/index.js",
-    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' src/server.ts"
+    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' src/index.ts"
   },
   "author": "Samuel Ruiz",
   "license": "ISC"
