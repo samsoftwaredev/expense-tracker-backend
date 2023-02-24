@@ -44,7 +44,7 @@ class Server {
   };
 
   start = async (port?: number) => {
-    const PORT = port || process.env.APP_PORT || process.env.PORT;
+    const PORT = process.env.PORT || process.env.APP_PORT || port;
     this.server = this.app.listen(PORT, () => {
       console.log("Server listening at port: " + PORT);
     });
